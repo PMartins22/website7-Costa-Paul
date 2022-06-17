@@ -1,0 +1,108 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFF;
+  font-family: sans-serif;
+}
+
+/* Layout Styles */
+.hg-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.hg-page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.hg-content {
+  background: #FFF;
+  padding: 20px;
+  color: #111111;
+}
+
+.hg-nav {
+  background: #263238;
+  padding: 20px;
+  order: -1;
+}
+
+.hg-header,
+.hg-footer {
+  flex: none;
+  background: #394449;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Layout responsive */
+
+@media all and (min-width: 768px) {
+  .hg-page-body {
+    flex-direction: row;
+  }
+
+  .hg-content {
+    flex: 1;
+  }
+
+  .hg-nav {
+    flex: 0 0 200px;
+  }
+}
+
+/* NavList Properties*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: inline-start;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+/* Footer CSS */
+footer {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+/* Link Class to Eliminate Decoration */
+.noDecoration,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.images {
+  width: 60%;
+}
